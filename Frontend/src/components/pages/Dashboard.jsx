@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import {useState } from 'react';
 import {
   PieChart, Pie, Cell, Tooltip,
   LineChart, Line, XAxis, YAxis, CartesianGrid, Legend,
@@ -56,7 +56,7 @@ export default function Dashboard() {
 
       {/* Charts */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-        <div className="bg-blue-950  p-3 rounded-xl shadow">
+        <div className="bg-gray-800  p-3 rounded-xl shadow">
           <h3 className="font-semibold text-white mb-2">Protocol Distribution</h3>
           <PieChart width={500} height={550}>
 
@@ -69,7 +69,7 @@ export default function Dashboard() {
           </PieChart>
         </div>
 
-        <div className="bg-blue-950  p-4 rounded-xl shadow">
+        <div className="bg-gray-800 p-4 rounded-xl shadow">
           <h3 className="font-semibold text-white mb-2">Top IP Addresses</h3>
 
           <BarChart width={500} height={500} data={stats.topIPs}>
@@ -83,7 +83,7 @@ export default function Dashboard() {
       </div>
 
       {/* Line Chart - Traffic Over Time */}
-      <div className="bg-blue-950 p-4 rounded-xl shadow mb-6 ">
+      <div className="bg-gray-800  p-4 rounded-xl shadow mb-6 ">
         <h3 className="font-semibold text-white mb-2">Traffic Over Time</h3>
         <LineChart width={1600} height={350} data={stats.trafficHistory}>
           <XAxis dataKey="time" />
@@ -96,7 +96,7 @@ export default function Dashboard() {
       </div>
 
       {/* Latest Packets */}
-      <div className="bg-blue-950 p-4 rounded-xl shadow">
+      <div className="bg-gray-800  p-4 rounded-xl shadow">
         <h3 className="font-semibold text-white mb-2">Latest 5 Packets</h3>
         <table className="min-w-full text-sm text-left">
           <thead>
@@ -127,7 +127,7 @@ export default function Dashboard() {
 
 function Card({ title, value }) {
   return (
-    <div className="bg-blue-950 rounded-xl shadow p-4 text-center mt-10">
+    <div className="bg-gray-800 rounded-xl shadow p-4 text-center mt-10">
       <h4 className="text-gray-400 text-sm mb-1 font-bold ">{title}</h4>
       <p className="text-xl font-bold text-green-500">{value}</p>
     </div>
