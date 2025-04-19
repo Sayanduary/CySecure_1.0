@@ -85,7 +85,7 @@ export default function Dashboard() {
       {/* Line Chart - Traffic Over Time */}
       <div className="bg-gray-800  p-4 rounded-xl shadow mb-6 ">
         <h3 className="font-semibold text-white mb-2">Traffic Over Time</h3>
-        <LineChart width={1600} height={350} data={stats.trafficHistory}>
+        <LineChart width={1395} height={350} data={stats.trafficHistory}>
           <XAxis dataKey="time" />
           <YAxis />
           <CartesianGrid strokeDasharray="3 3" />
