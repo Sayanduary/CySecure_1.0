@@ -47,13 +47,7 @@ function Alert() {
         />
         {errors.Dst && <span className='text-white'>This field is required</span>}
 
-        <input
-          type="text"
-          placeholder='Enter Your Suspicious'
-          {...register("Suspicious", { required: true })}
-          className='bg-white rounded-sm p-3'
-        />
-        {errors.Suspicious && <span className='text-white'>This field is required</span>}
+        
 
         {/* Correct self-closing submit input */}
         <input type='submit' value="Submit" className='bg-[#00a63d] p-4 text-xl rounded-sm cursor-pointer' />
